@@ -5,6 +5,7 @@ document = section_body { section }
 section = section_head section_body
 
 section_head_begin = DEFAULT_SECTION_HEAD_BEGIN
+
 section_head_end = DEFAULT_SECTION_HEAD_END
 
 section_head = section_head_begin [..]+ section_head_end
@@ -23,4 +24,5 @@ line_comment = '#' [^\n\\]+ ?( '\\'? '\n' )
 
 
 DEFAULT_SECTION_HEAD_BEGIN = '\n\n[['
+
 DEFAULT_SECTION_HEAD_END = ']]\n'
